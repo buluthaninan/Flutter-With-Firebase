@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_with_firebase/net/flutterfire.dart';
+
 
 class Authentication extends StatefulWidget {
   const Authentication({Key? key}) : super(key: key);
@@ -64,7 +66,12 @@ class _AuthenticationState extends State<Authentication> {
                 color: Colors.white,
               ),
               child: MaterialButton(
-                onPressed: (){},
+                onPressed: () async{
+                  bool shouldNavigate = await register(_emailField.text, _passwordField.text);
+                  if(shouldNavigate){
+                    //Navigate
+                  }
+                },
                 child: Text("Register"),
               ),
             ),
@@ -78,7 +85,12 @@ class _AuthenticationState extends State<Authentication> {
                 color: Colors.white,
               ),
               child: MaterialButton(
-                onPressed: (){},
+                onPressed: () async {
+                  bool shouldNavigate = await signIn(_emailField.text, _passwordField.text);
+                  if(shouldNavigate){
+                    //Navigate
+                  }
+                },
                 child: Text("Log In"),
               ),
             ),

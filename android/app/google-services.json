@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85015402893",
+    "project_id": "crypto-wallet-15f33",
+    "storage_bucket": "crypto-wallet-15f33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85015402893:android:fc52e4c9d94fe5d16d05c4",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_with_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85015402893-0prgc30066vk80ufbgke13697g3mncpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgL29_ES3vw6OJhpepU1GNEcg0RaI2k_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85015402893-0prgc30066vk80ufbgke13697g3mncpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

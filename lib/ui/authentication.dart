@@ -24,6 +24,7 @@ class _AuthenticationState extends State<Authentication> {
           color: Colors.blueAccent,
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //for e mail and passwd field
           children: [
             TextFormField(

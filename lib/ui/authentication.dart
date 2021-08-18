@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_with_firebase/net/flutterfire.dart';
+import 'package:flutter_app_with_firebase/ui/home_view.dart';
 
 
 class Authentication extends StatefulWidget {
@@ -70,6 +71,9 @@ class _AuthenticationState extends State<Authentication> {
                   bool shouldNavigate = await register(_emailField.text, _passwordField.text);
                   if(shouldNavigate){
                     //Navigate
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeView(),
+                    ),
+                    );
                   }
                 },
                 child: Text("Register"),
@@ -89,6 +93,9 @@ class _AuthenticationState extends State<Authentication> {
                   bool shouldNavigate = await signIn(_emailField.text, _passwordField.text);
                   if(shouldNavigate){
                     //Navigate
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeView(),
+                    ),
+                    );
                   }
                 },
                 child: Text("Log In"),

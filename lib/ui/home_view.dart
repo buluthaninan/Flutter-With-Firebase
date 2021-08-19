@@ -77,18 +77,27 @@ class _HomeViewState extends State<HomeView> {
                         color: Colors.blue,
                       ),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          SizedBox(width: 5.0,),
                           Text(
-                            "Coin Name: ${document.id}",
+                            "Coin: ${document.id}",
                             style: TextStyle(
+                              fontSize: 18.0 ,
                               color: Colors.white,
                             ),
                           ),
-                          Text("Amount Owned: \₺${getValue(document.id,  document.data()["Amount"]).toStringAsFixed(2)}",
+                          Text("\₺${getValue(document.id,  document.data()["Amount"]).toStringAsFixed(2)}",
                             style :TextStyle(
+                              fontSize: 18.0 ,
                               color: Colors.white,
                             ),
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.close, color: Colors.red,),
+                            onPressed: (){
+                              print("Test");
+                            },
                           ),
                         ],
                       ),

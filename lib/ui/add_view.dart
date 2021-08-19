@@ -48,6 +48,7 @@ class _AddViewState extends State<AddView> {
               decoration: InputDecoration(
                 labelText: "Coin Amount",
               ),
+              keyboardType: TextInputType.number,
             ),
           ),
           SizedBox(height: MediaQuery.of(context).size.height / 35,),

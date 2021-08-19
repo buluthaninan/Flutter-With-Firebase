@@ -34,7 +34,7 @@ Future<bool> addCoin(String id, String amount) async{
   try{
     String uid = FirebaseAuth.instance.currentUser.uid;
     var value = double.parse(amount);
-    DocumentReference documentReference = FirebaseFirestore.instance.collection("users").doc(uid).collection("coins").doc(id);
+    DocumentReference documentReference = FirebaseFirestore.instance.collection("Users").doc(uid).collection("Coins").doc(id);
 
     FirebaseFirestore.instance.runTransaction((transaction) async {
       DocumentSnapshot snapshot = await transaction.get(documentReference);

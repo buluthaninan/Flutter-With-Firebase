@@ -45,7 +45,22 @@ class _AddViewState extends State<AddView> {
               decoration: InputDecoration(
                 labelText: "Coin Amount",
               ),
-              keyboardType: TextInputType.text,
+            ),
+          ),
+          Container(
+            //for great seeing formatting nicely
+            width: MediaQuery.of(context).size.width / 1.4,
+            height: 45.0,
+            decoration: BoxDecoration(
+              //white buton with rounded decoration
+              borderRadius: BorderRadius.circular(15.0),
+              color: Colors.white,
+            ),
+            child: MaterialButton(
+              onPressed: () async{
+               //TODO
+              },
+              child: Text("Add"),
             ),
           ),
         ],

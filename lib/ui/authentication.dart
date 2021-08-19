@@ -4,7 +4,7 @@ import 'package:flutter_app_with_firebase/ui/home_view.dart';
 
 
 class Authentication extends StatefulWidget {
-  const Authentication({Key? key}) : super(key: key);
+
 
   @override
   _AuthenticationState createState() => _AuthenticationState();

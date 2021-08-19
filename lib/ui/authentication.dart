@@ -27,10 +27,15 @@ class _AuthenticationState extends State<Authentication> {
           color: Colors.blueAccent,
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           //for e mail and passwd field
           children: [
-            TextFormField(
+            Container(
+              width: MediaQuery.of(context).size.width / 1.3,
+                child: TextFormField(
+              style: TextStyle(
+                color: Colors.white,
+              ),
               controller: _emailField,
               decoration: InputDecoration(
                 hintText: "something@email.com",
@@ -43,7 +48,14 @@ class _AuthenticationState extends State<Authentication> {
                 ),
               ),
             ),
-            TextFormField(
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height / 35,),
+            Container(
+              width: MediaQuery.of(context).size.width / 1.3,
+                child: TextFormField(
+              style: TextStyle(
+                color: Colors.white,
+              ),
               controller: _passwordField,
               obscureText: true, // not to see in passwd field
               decoration: InputDecoration(
@@ -56,7 +68,8 @@ class _AuthenticationState extends State<Authentication> {
                   color: Colors.white,
                 ),
               ),
-            ),
+            ),),
+            SizedBox(height: MediaQuery.of(context).size.height / 35,),
             Container(
               //for great seeing formatting nicely
               width: MediaQuery.of(context).size.width / 1.4,
@@ -79,6 +92,7 @@ class _AuthenticationState extends State<Authentication> {
                 child: Text("Register"),
               ),
             ),
+            SizedBox(height: MediaQuery.of(context).size.height / 35,),
             Container(
               //for great seeing formatting nicely
               width: MediaQuery.of(context).size.width / 1.4,

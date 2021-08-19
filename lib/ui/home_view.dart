@@ -6,8 +6,6 @@ import 'package:flutter_app_with_firebase/net/flutterfire.dart';
 import 'package:flutter_app_with_firebase/ui/add_view.dart';
 
 class HomeView extends StatefulWidget {
-
-
   @override
   _HomeViewState createState() => _HomeViewState();
 }

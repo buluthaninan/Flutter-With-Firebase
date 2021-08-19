@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_with_firebase/net/flutterfire.dart';
 
 
 class AddView extends StatefulWidget {
@@ -61,7 +62,7 @@ class _AddViewState extends State<AddView> {
             ),
             child: MaterialButton(
               onPressed: () async{
-               //TODO
+               await addCoin(dropdownValue, _amountController.text);
                 Navigator.of(context).pop();
               },
               child: Text("Add"),

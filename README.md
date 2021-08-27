@@ -1,6 +1,6 @@
 # flutter_app_with_firebase
 
-A new Flutter application for better understanding FireStore.<br>
+A new Flutter application for better understanding FireStore.<br><br>
 Login-Register Screen<br>
 ![Screenshot_1630072467](https://user-images.githubusercontent.com/61562488/131138574-c3a5ff2d-dc2c-4843-a9dd-5f9a75302c58.png)
 Add Coin DropDown List Screen<br>
